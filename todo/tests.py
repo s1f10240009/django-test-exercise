@@ -10,6 +10,7 @@ class SampleTestCase(TestCase):
     def test_sample1(self):
         self.assertEqual(1 + 2, 3)
 
+
 class TaskModelCase(TestCase):
     def test_create_task1(self):
         due = timezone.make_aware(datetime(2024, 6, 30, 23, 59, 59))
@@ -32,7 +33,6 @@ class TaskModelCase(TestCase):
 
 
 class TaskModelTestCase(TestCase):
-
 
     def test_is_overdue_future(self):
         due = timezone.make_aware(datetime(2024, 6, 30, 23, 59, 59))
